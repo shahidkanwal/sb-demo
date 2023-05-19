@@ -36,7 +36,12 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			
+			 <configuration>
+          <nonFilteredFileExtensions>
+            <nonFilteredFileExtension>pdf</nonFilteredFileExtension>
+            <nonFilteredFileExtension>swf</nonFilteredFileExtension>
+          </nonFilteredFileExtensions>
+        </configuration>
 			</plugin>
 		</plugins>
 		<finalName>awsdemo</finalName>
