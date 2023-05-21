@@ -24,6 +24,8 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '11'
+        maven-version: 3.9.2
+
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
